@@ -1,1 +1,3 @@
+Critical Problem Solution : Peterson Method
 http://www2.cs.uregina.ca/~hamilton/courses/330/notes/synchro/node3.html
+

@@ -1,3 +1,6 @@
-Critical Problem Solution : Peterson Method
+Critical Problem Solution : Peterson Method (Example)
 http://www2.cs.uregina.ca/~hamilton/courses/330/notes/synchro/node3.html
+
+Fork in C : A way of process creation
+http://www.geeksforgeeks.org/fork-system-call/
 

@@ -3,6 +3,9 @@ using namespace std;
 
 //Idea : recursively try to fix the elements which will definitely be there before kth element. 
 
+//i and j are starting indices of A and B respectively.
+//m and n are length of A and B into consideration.
+
 int kth(vector<int> &A,vector<int> &B,int i,int m,int j,int n,int k)
 {
     if(n<m) return kth(B,A,j,n,i,m,k); //making A samller than B.

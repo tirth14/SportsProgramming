@@ -1,10 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-//Idea : recursively try to fix the elements which will definitely be there before kth element. 
+//Idea : recursively try to fix the elements which will definitely be there in the basket(before kth element). 
 
 //i and j are starting indices of A and B respectively.
 //m and n are length of A and B into consideration.
+//fixA is the number of elements we are putting in basket from A.
 
 int kth(vector<int> &A,vector<int> &B,int i,int m,int j,int n,int k)
 {

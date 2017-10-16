@@ -35,4 +35,5 @@ int main()
    }
     
     cout<<(dp1[n1][n2]+dp2[n1][n2])%p<<endl;
+   
 }

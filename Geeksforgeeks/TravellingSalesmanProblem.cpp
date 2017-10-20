@@ -18,6 +18,7 @@ int TSP(int n, vector<vector<int> > cost)
     
     for(int mask=3;mask<(1<<n);mask+=2)
     {
+        //considering every set bit in mask 'mask' as ending bit.
         for(int i=0;i<n;i++)
         {
             bool is_subset_size2=true;
@@ -35,7 +36,8 @@ int TSP(int n, vector<vector<int> > cost)
                         dp[i][mask]=cost[0][i];
                         continue;
                     }
-                    
+                
+                //considering every set bit in mask 'mask^(1<<i)' as ending bit.
                 for(int j=0;j<n;j++)
                 {
                     if(mask&(1<<j) && j!=i && j!=0)

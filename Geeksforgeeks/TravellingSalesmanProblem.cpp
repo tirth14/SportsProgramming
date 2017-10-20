@@ -22,7 +22,8 @@ int TSP(int n, vector<vector<int> > cost)
         {
             bool is_subset_size2=true;
             
-            //checking if (mask-1) is power of 2.
+            //checking if (mask-1) is power of 2, which means only two set bits are there, 0th and ith.
+            //so, cost from 0th to ith city is cost[0][i].
             
             if((mask-1)&(mask-2))
                 is_subset_size2=false;

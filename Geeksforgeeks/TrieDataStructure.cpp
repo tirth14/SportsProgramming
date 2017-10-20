@@ -67,6 +67,22 @@ void insert(TrieNode* root, string s)
     pCrawl->isLast = true;
 }
 
+bool search(TrieNode* root, string key)
+{
+    TrieNode* currNode = root;
+    
+    for(int i=0;i<key.length();i++)
+    {
+        int index=key[i]-'a';
+        if(currNode->child[index])
+            currNode=currNode->child[index];
+        else
+            return false;
+    }
+    return currNode!=NULL && currNode->isLast;
+}
+
+
 void displayContactsUtil(TrieNode* currNode, string prefix)
 {
     if(currNode->isLast==true) 
@@ -132,6 +148,13 @@ int main()
         cin>>query;
         
         displayContacts(root, query);
+      
+       bool b = search(root, "geeksforgeeks");
+        
+        if(b) 
+            cout<<"Found"<<endl;
+        else 
+            cout<<"Not Found"<<endl;
     }   
     
 }

@@ -49,9 +49,8 @@ int main()
         favout+=(double)((double)wd[i]*(n-wn[i]));
     }
     
-    double res=(double)favout/wdsum;
+    double res=favout/wdsum;
     
-    
-    
-    cout<<setprecision(11)<<res<<endl;
+    //2->2.0000000000
+    cout<<setprecision(10)<<res<<endl;
 }
